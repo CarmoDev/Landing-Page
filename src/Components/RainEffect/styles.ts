@@ -1,17 +1,5 @@
 import styled, {keyframes} from "styled-components";
 
-const Rain = keyframes`
-  from {
-    opacity: 1;
-    top: 0;
-    right: 0
-  } to {
-    opacity: 0;
-    top: 1000px;
-    left: 0;
-  }
-`;
-
 const rain = keyframes`
   0% {
     -webkit-transform: translateY(-100px) translateX(1000px) rotate(60deg);
