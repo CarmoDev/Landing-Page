@@ -3,8 +3,8 @@ import { Container } from "./styles";
 
 export default function Rain() {
   const [rainCount] = useState(40);
-  const [animationTiming] = useState(8);
-  const container = useRef(null);
+  const [animationTiming] = useState();
+  const container = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     for (let index = 0; index < rainCount; index++) {
