@@ -1,13 +1,19 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from "next/document";
+
+import StyledComponentsRegistry from "../lib/StyledComponentsRegistry";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="pt-br">
       <Head />
       <body>
-        <Main />
-        <NextScript />
+        <StyledComponentsRegistry>
+          <>
+            <Main />
+            <NextScript />
+          </>
+        </StyledComponentsRegistry>
       </body>
     </Html>
-  )
+  );
 }
