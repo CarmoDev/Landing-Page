@@ -18,9 +18,9 @@ export default function Switch({firstOption, secondOption, children, data}: Swit
     setSelectedOption((prevState) => prevState === firstOption ? secondOption : firstOption);
   }
 
-  function handleMakesClickAcessible(event: { keyCode: number; }) {
-    if(event.keyCode === 13) { // The Enter/Return key
-      document?.activeElement.click();
+  function handleMakesClickAcessible(event: any) {
+    if(event.keyCode === 13) {
+      event.target.click();
     }
   }
 
@@ -40,7 +40,7 @@ export default function Switch({firstOption, secondOption, children, data}: Swit
           onClick={handleToggleSwitch}
           onKeyDown={handleMakesClickAcessible}
         >
-          <div className={selectedOption === firstOption ? "" : "second"} />
+          <div role="presentational" className={selectedOption === firstOption ? "" : "second"} title={selectedOption} />
         </StyledSwitch>
 
         <span  className={selectedOption === secondOption ? "ativo" : ""}>{secondOption}</span>
