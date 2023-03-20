@@ -2,11 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.main`
   width: 100dvw;
-  
+
   height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 620px) {
+    justify-content: space-between;
+  }
 `;
 
 export const Content = styled.section`
@@ -18,6 +22,8 @@ export const Content = styled.section`
 
    img {
     margin-top: 64px;
+    aspect-ratio:attr(width)/attr(height);
+    max-width: 80%;
   }
 
   h1 {
@@ -36,7 +42,7 @@ export const Content = styled.section`
     font-weight: bold;
     background-color: ${({ theme }) => theme.colors.primary.main};
     border-radius: 4px;
-    border: none; 
+    border: none;
     transition: .4s;
 
     font-size: 24px;
@@ -44,6 +50,12 @@ export const Content = styled.section`
     :hover {
       cursor: pointer;
       background-color: ${({ theme }) => theme.colors.primary.dark};
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    img {
+      margin-top: 0;
     }
   }
 `;

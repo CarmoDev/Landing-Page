@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <Container>
       <Content>
-        <Image src={Logotype} alt="logotipo" priority />
+        <Image src={Logotype} alt="logotipo" width={400} height={250} priority />
 
         <h1>Leve sua empresa para um novo nível</h1>
 
