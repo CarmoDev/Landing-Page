@@ -13,7 +13,7 @@ export default function Review({comment, client}: ReviewProps) {
       <p>{comment}</p>
 
       <User>
-        <Image src={Dummy} alt={client} />
+        <Image src={Dummy} alt={client} loading="lazy" />
         {client}
       </User>
     </Container>

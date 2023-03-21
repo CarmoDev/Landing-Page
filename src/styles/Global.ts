@@ -8,7 +8,6 @@ export default createGlobalStyle`
     font-family: sans-serif;
     color: white;
     text-align: center;
-    scrollBehavior: smooth;
   }
 
   html {
@@ -18,9 +17,5 @@ export default createGlobalStyle`
 
   body {
     background-color: #010C15;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-x: hidden;
   }
 `;

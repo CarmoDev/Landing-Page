@@ -40,7 +40,7 @@ export default function Switch({firstOption, secondOption, children, data}: Swit
           onClick={handleToggleSwitch}
           onKeyDown={handleMakesClickAcessible}
         >
-          <div role="presentational" className={selectedOption === firstOption ? "" : "second"} title={selectedOption} />
+          <div className={selectedOption === firstOption ? "" : "second"} title={selectedOption} />
         </StyledSwitch>
 
         <span  className={selectedOption === secondOption ? "ativo" : ""}>{secondOption}</span>

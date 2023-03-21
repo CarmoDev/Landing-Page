@@ -13,7 +13,7 @@ const rain = keyframes`
   }
 `;
 export const Container = styled.div`
-  width: 100dvw;
+  width: 100%;
   height: 100dvh;
   overflow: hidden;
   position: fixed;

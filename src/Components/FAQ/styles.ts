@@ -5,7 +5,7 @@ export const Container = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 100dvw;
+  width: 100%;
   padding: 48px 0;
   z-index: 3;
   text-align: left;
